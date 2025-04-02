@@ -20,4 +20,4 @@ jobs:
         cache: maven
         
     - name: Run test with maven
-      run: mvn clean test
+      run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
