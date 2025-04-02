@@ -2,7 +2,7 @@
 <suite name="TestSuite" parallel="methods" thread-count="2">
     <test name="TestCases">
         <packages>
-            <package name="app.register.TC_RF_001"/>
+            <package name="app.register.SampleTest"/>
         </packages>
     </test>
 </suite>
