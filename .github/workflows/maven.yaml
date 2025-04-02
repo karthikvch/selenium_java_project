@@ -30,4 +30,10 @@ jobs:
           restore-keys: maven-${{ runner.os }}-
 
       - name: Build and Run TestNG Tests
-        run: mvn clean test
+        run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
+
+      - name: Store TestNG Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: TestNG-Reports
+          path: target/surefire-reports
