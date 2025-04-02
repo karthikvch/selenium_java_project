@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestSuite" parallel="methods" thread-count="2">
     <test name="TestCases">
-        <packages>
-            <package name="app.register.SampleTest"/>
-        </packages>
+        <classes>
+            <class name="app.register.SampleTest"/>
+        </classes>
     </test>
 </suite>
