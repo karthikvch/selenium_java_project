@@ -1,0 +1,20 @@
+name: Java CI Sample with Maven
+on:
+  push:
+    branches:["master"]
+  pull_request:
+    branches:["main"]
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: action/checkout@4
+      - name: Set up JDK 17
+        uses: action/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'temurin'
+          cache: maven
+      - name: Run test with maven
+        run: mvn test -DsuiteFile="testng.xml"

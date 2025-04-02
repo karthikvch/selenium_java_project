@@ -22,7 +22,7 @@ public class TC_RF_001 {
         driver.findElement(By.id("input-password")).sendKeys("tom@123");
         driver.findElement(By.id("input-confirm")).sendKeys("tom@123");
         driver.findElement(By.id("agree")).click();
-        //driver.findElement(By.xpath("//input[@value='Continue']")).submit();
+        driver.findElement(By.xpath("//input[@value='Continue']")).submit();
 
 
 
